@@ -1,0 +1,23 @@
+code,city,state,region,n_orders,median_lat,median_lon,expected_lat,expected_lon,km_off,ok
+GOA,Goa,Goa,North,609,15.517,73.767,15.3,74.12,44.9,True
+HYD,Hyderabad,Telangana,South,3179,17.431,78.4,17.39,78.49,10.6,True
+KOC,Kochi,Kerala,South,701,9.986,76.297,9.93,76.27,6.9,True
+MUM,Mumbai,Maharashtra,North,3173,19.122,72.835,19.08,72.88,6.7,True
+CHEN,Chennai,Tamil Nadu,South,3144,13.03,80.242,13.08,80.27,6.3,True
+BANG,Bangalore,Karnataka,South,3193,12.97,77.64,12.97,77.59,5.5,True
+BHP,Bhopal,Madhya Pradesh,North,478,23.232,77.43,23.26,77.4,4.3,True
+SUR,Surat,Gujarat,North,3187,21.171,72.789,21.17,72.83,4.2,True
+INDO,Indore,Madhya Pradesh,North,3158,22.745,75.888,22.72,75.86,4.0,True
+DEH,Dehradun,Uttarakhand,North,492,30.343,78.061,30.32,78.03,3.9,True
+AGR,Agra,Uttar Pradesh,North,550,27.162,78.043,27.18,78.01,3.8,True
+LUDH,Ludhiana,Punjab,North,687,30.893,75.822,30.9,75.86,3.7,True
+KOL,Kolkata,West Bengal,North,700,22.539,88.365,22.57,88.36,3.5,True
+MYS,Mysore,Karnataka,South,3011,12.323,76.628,12.3,76.65,3.5,True
+PUNE,Pune,Maharashtra,North,3132,18.546,73.843,18.52,73.86,3.5,True
+ALH,Allahabad,Uttar Pradesh,North,568,25.452,81.835,25.43,81.85,2.9,True
+KNP,Kanpur,Uttar Pradesh,North,676,26.475,80.321,26.45,80.33,2.9,True
+RANCHI,Ranchi,Jharkhand,North,2563,23.359,85.325,23.34,85.31,2.6,True
+COIMB,Coimbatore,Tamil Nadu,South,3169,11.009,76.976,11.02,76.96,2.2,True
+JAP,Jaipur,Rajasthan,North,3443,26.905,75.795,26.92,75.79,1.7,True
+VAD,Vadodara,Gujarat,North,1576,22.311,73.168,22.31,73.18,1.3,True
+AURG,Aurangabad,Maharashtra,North,555,19.876,75.346,19.88,75.34,0.8,True

@@ -1,0 +1,575 @@
+{
+  "n_rows": 41944,
+  "n_south": 16397,
+  "n_north": 25547,
+  "findings": [
+    {
+      "id": "fig_reg_01_target",
+      "name": "F1: Delivery time differs by region",
+      "test": "Mann-Whitney U",
+      "stat": "U=207941110",
+      "p": 0.2130417388300515,
+      "south_median": 25.0,
+      "north_median": 26.0,
+      "effect_median_diff": -1.0,
+      "verdict": "North > South"
+    },
+    {
+      "id": "fig_reg_02_weather",
+      "name": "F2: Weather distribution differs",
+      "test": "Chi-square",
+      "stat": "chi2=7.7",
+      "p": 0.2644828808318428,
+      "cramers_v": 0.013509460852944225,
+      "verdict": "Same"
+    },
+    {
+      "id": "fig_reg_03_traffic",
+      "name": "F3: Traffic density differs",
+      "test": "Chi-square",
+      "stat": "chi2=1.0",
+      "p": 0.7947460200722116,
+      "cramers_v": 0.004981031180394912,
+      "verdict": "Same"
+    },
+    {
+      "id": "fig_reg_04_multi",
+      "name": "F4: Multi-delivery norms differ",
+      "test": "Mann-Whitney U",
+      "stat": "U=199693348",
+      "p": 0.3899538139854044,
+      "south_median": 1.0,
+      "north_median": 1.0,
+      "effect_median_diff": 0.0,
+      "verdict": "North > South"
+    },
+    {
+      "id": "fig_reg_05_age",
+      "name": "F5: Rider age skew",
+      "test": "Mann-Whitney U",
+      "stat": "U=192135843",
+      "p": 0.6513324406251202,
+      "south_median": 30.0,
+      "north_median": 30.0,
+      "effect_median_diff": 0.0,
+      "verdict": "North > South"
+    },
+    {
+      "id": "fig_reg_06_rating",
+      "name": "F6: Rider rating skew",
+      "test": "Mann-Whitney U",
+      "stat": "U=191711132",
+      "p": 0.9110142106134662,
+      "south_median": 4.7,
+      "north_median": 4.7,
+      "effect_median_diff": 0.0,
+      "verdict": "North > South"
+    },
+    {
+      "id": "fig_reg_07_vehicle",
+      "name": "F7: Vehicle preferences differ",
+      "test": "Chi-square",
+      "stat": "chi2=3.9",
+      "p": 0.276493508926686,
+      "cramers_v": 0.009598453103448458,
+      "verdict": "Same"
+    },
+    {
+      "id": "fig_reg_08_ordertype",
+      "name": "F8: Order-type mix differs",
+      "test": "Chi-square",
+      "stat": "chi2=0.7",
+      "p": 0.8783670554808599,
+      "cramers_v": 0.0040204848401275755,
+      "verdict": "Same"
+    },
+    {
+      "id": "fig_reg_09_festival",
+      "name": "F9: Festival incidence differs",
+      "test": "Chi-square",
+      "stat": "chi2=2.3",
+      "p": 0.1324065427284526,
+      "cramers_v": 0.007365885490258097,
+      "verdict": "Same"
+    },
+    {
+      "id": "fig_reg_10_hour",
+      "name": "F10: Time-of-day rhythm",
+      "test": "KS 2-sample",
+      "stat": "D=0.006",
+      "p": 0.8297305118363477,
+      "verdict": "Same"
+    },
+    {
+      "id": "fig_reg_11_citytier",
+      "name": "F11: City-tier mix differs",
+      "test": "Chi-square",
+      "stat": "chi2=3.0",
+      "p": 0.22870732097175434,
+      "cramers_v": 0.008500946244662917,
+      "verdict": "Same"
+    }
+  ],
+  "city_check": [
+    {
+      "code": "GOA",
+      "city": "Goa",
+      "state": "Goa",
+      "region": "North",
+      "n_orders": 609,
+      "median_lat": 15.517,
+      "median_lon": 73.767,
+      "expected_lat": 15.3,
+      "expected_lon": 74.12,
+      "km_off": 44.9,
+      "ok": true
+    },
+    {
+      "code": "HYD",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "region": "South",
+      "n_orders": 3179,
+      "median_lat": 17.431,
+      "median_lon": 78.4,
+      "expected_lat": 17.39,
+      "expected_lon": 78.49,
+      "km_off": 10.6,
+      "ok": true
+    },
+    {
+      "code": "KOC",
+      "city": "Kochi",
+      "state": "Kerala",
+      "region": "South",
+      "n_orders": 701,
+      "median_lat": 9.986,
+      "median_lon": 76.297,
+      "expected_lat": 9.93,
+      "expected_lon": 76.27,
+      "km_off": 6.9,
+      "ok": true
+    },
+    {
+      "code": "MUM",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "region": "North",
+      "n_orders": 3173,
+      "median_lat": 19.122,
+      "median_lon": 72.835,
+      "expected_lat": 19.08,
+      "expected_lon": 72.88,
+      "km_off": 6.7,
+      "ok": true
+    },
+    {
+      "code": "CHEN",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "region": "South",
+      "n_orders": 3144,
+      "median_lat": 13.03,
+      "median_lon": 80.242,
+      "expected_lat": 13.08,
+      "expected_lon": 80.27,
+      "km_off": 6.3,
+      "ok": true
+    },
+    {
+      "code": "BANG",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "region": "South",
+      "n_orders": 3193,
+      "median_lat": 12.97,
+      "median_lon": 77.64,
+      "expected_lat": 12.97,
+      "expected_lon": 77.59,
+      "km_off": 5.5,
+      "ok": true
+    },
+    {
+      "code": "BHP",
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "region": "North",
+      "n_orders": 478,
+      "median_lat": 23.232,
+      "median_lon": 77.43,
+      "expected_lat": 23.26,
+      "expected_lon": 77.4,
+      "km_off": 4.3,
+      "ok": true
+    },
+    {
+      "code": "SUR",
+      "city": "Surat",
+      "state": "Gujarat",
+      "region": "North",
+      "n_orders": 3187,
+      "median_lat": 21.171,
+      "median_lon": 72.789,
+      "expected_lat": 21.17,
+      "expected_lon": 72.83,
+      "km_off": 4.2,
+      "ok": true
+    },
+    {
+      "code": "INDO",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "region": "North",
+      "n_orders": 3158,
+      "median_lat": 22.745,
+      "median_lon": 75.888,
+      "expected_lat": 22.72,
+      "expected_lon": 75.86,
+      "km_off": 4.0,
+      "ok": true
+    },
+    {
+      "code": "DEH",
+      "city": "Dehradun",
+      "state": "Uttarakhand",
+      "region": "North",
+      "n_orders": 492,
+      "median_lat": 30.343,
+      "median_lon": 78.061,
+      "expected_lat": 30.32,
+      "expected_lon": 78.03,
+      "km_off": 3.9,
+      "ok": true
+    },
+    {
+      "code": "AGR",
+      "city": "Agra",
+      "state": "Uttar Pradesh",
+      "region": "North",
+      "n_orders": 550,
+      "median_lat": 27.162,
+      "median_lon": 78.043,
+      "expected_lat": 27.18,
+      "expected_lon": 78.01,
+      "km_off": 3.8,
+      "ok": true
+    },
+    {
+      "code": "LUDH",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "region": "North",
+      "n_orders": 687,
+      "median_lat": 30.893,
+      "median_lon": 75.822,
+      "expected_lat": 30.9,
+      "expected_lon": 75.86,
+      "km_off": 3.7,
+      "ok": true
+    },
+    {
+      "code": "KOL",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "region": "North",
+      "n_orders": 700,
+      "median_lat": 22.539,
+      "median_lon": 88.365,
+      "expected_lat": 22.57,
+      "expected_lon": 88.36,
+      "km_off": 3.5,
+      "ok": true
+    },
+    {
+      "code": "MYS",
+      "city": "Mysore",
+      "state": "Karnataka",
+      "region": "South",
+      "n_orders": 3011,
+      "median_lat": 12.323,
+      "median_lon": 76.628,
+      "expected_lat": 12.3,
+      "expected_lon": 76.65,
+      "km_off": 3.5,
+      "ok": true
+    },
+    {
+      "code": "PUNE",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "region": "North",
+      "n_orders": 3132,
+      "median_lat": 18.546,
+      "median_lon": 73.843,
+      "expected_lat": 18.52,
+      "expected_lon": 73.86,
+      "km_off": 3.5,
+      "ok": true
+    },
+    {
+      "code": "ALH",
+      "city": "Allahabad",
+      "state": "Uttar Pradesh",
+      "region": "North",
+      "n_orders": 568,
+      "median_lat": 25.452,
+      "median_lon": 81.835,
+      "expected_lat": 25.43,
+      "expected_lon": 81.85,
+      "km_off": 2.9,
+      "ok": true
+    },
+    {
+      "code": "KNP",
+      "city": "Kanpur",
+      "state": "Uttar Pradesh",
+      "region": "North",
+      "n_orders": 676,
+      "median_lat": 26.475,
+      "median_lon": 80.321,
+      "expected_lat": 26.45,
+      "expected_lon": 80.33,
+      "km_off": 2.9,
+      "ok": true
+    },
+    {
+      "code": "RANCHI",
+      "city": "Ranchi",
+      "state": "Jharkhand",
+      "region": "North",
+      "n_orders": 2563,
+      "median_lat": 23.359,
+      "median_lon": 85.325,
+      "expected_lat": 23.34,
+      "expected_lon": 85.31,
+      "km_off": 2.6,
+      "ok": true
+    },
+    {
+      "code": "COIMB",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "region": "South",
+      "n_orders": 3169,
+      "median_lat": 11.009,
+      "median_lon": 76.976,
+      "expected_lat": 11.02,
+      "expected_lon": 76.96,
+      "km_off": 2.2,
+      "ok": true
+    },
+    {
+      "code": "JAP",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "region": "North",
+      "n_orders": 3443,
+      "median_lat": 26.905,
+      "median_lon": 75.795,
+      "expected_lat": 26.92,
+      "expected_lon": 75.79,
+      "km_off": 1.7,
+      "ok": true
+    },
+    {
+      "code": "VAD",
+      "city": "Vadodara",
+      "state": "Gujarat",
+      "region": "North",
+      "n_orders": 1576,
+      "median_lat": 22.311,
+      "median_lon": 73.168,
+      "expected_lat": 22.31,
+      "expected_lon": 73.18,
+      "km_off": 1.3,
+      "ok": true
+    },
+    {
+      "code": "AURG",
+      "city": "Aurangabad",
+      "state": "Maharashtra",
+      "region": "North",
+      "n_orders": 555,
+      "median_lat": 19.876,
+      "median_lon": 75.346,
+      "expected_lat": 19.88,
+      "expected_lon": 75.34,
+      "km_off": 0.8,
+      "ok": true
+    }
+  ],
+  "model_geo": {
+    "features": [
+      "Restaurant_latitude",
+      "Restaurant_longitude",
+      "Delivery_location_latitude",
+      "Delivery_location_longitude",
+      "distance_km"
+    ],
+    "fold_auc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fold_f1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fold_bal_acc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "fold_acc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_auc": 1.0,
+    "mean_f1": 1.0,
+    "mean_bal_acc": 1.0
+  },
+  "model_behaviour": {
+    "features": [
+      "prep_time_min",
+      "order_hour",
+      "is_peak_lunch",
+      "is_peak_dinner",
+      "is_late_night",
+      "is_weekend",
+      "day_of_week",
+      "month",
+      "Delivery_person_Age",
+      "Delivery_person_Ratings",
+      "Vehicle_condition",
+      "multiple_deliveries",
+      "Weather_conditions",
+      "Road_traffic_density",
+      "Type_of_vehicle",
+      "Type_of_order",
+      "City",
+      "Festival"
+    ],
+    "fold_auc": [
+      0.5956844809136479,
+      0.5900034257019555,
+      0.5816603530832726,
+      0.5775330717194429,
+      0.5946707014291853
+    ],
+    "fold_f1": [
+      0.5975803252677508,
+      0.5879875664293592,
+      0.5895261845386534,
+      0.5840584058405841,
+      0.5841655513229692
+    ],
+    "fold_bal_acc": [
+      0.5884016713128495,
+      0.5789857654325188,
+      0.5795432438690211,
+      0.5733270794246403,
+      0.5805755661080665
+    ],
+    "fold_acc": [
+      0.5162713076647991,
+      0.5101919179878412,
+      0.509476695672905,
+      0.5042317320300393,
+      0.5184787792083929
+    ],
+    "mean_auc": 0.5879104065695008,
+    "mean_f1": 0.5886636066798634,
+    "mean_bal_acc": 0.5801666652294193,
+    "confusion_matrix": [
+      [
+        6807,
+        18740
+      ],
+      [
+        1740,
+        14657
+      ]
+    ],
+    "top_shap_features": {
+      "month": 0.4472,
+      "Delivery_person_Age": 0.0394,
+      "order_hour": 0.0321,
+      "Delivery_person_Ratings": 0.0294,
+      "Weather_conditions": 0.0266,
+      "Type_of_order": 0.0226,
+      "prep_time_min": 0.0206,
+      "day_of_week": 0.0206,
+      "Type_of_vehicle": 0.0161,
+      "multiple_deliveries": 0.0154
+    }
+  },
+  "auc_gap": 0.4120895934304992,
+  "model_behaviour_no_temporal": {
+    "features": [
+      "prep_time_min",
+      "order_hour",
+      "is_peak_lunch",
+      "is_peak_dinner",
+      "is_late_night",
+      "is_weekend",
+      "Delivery_person_Age",
+      "Delivery_person_Ratings",
+      "Vehicle_condition",
+      "multiple_deliveries",
+      "Weather_conditions",
+      "Road_traffic_density",
+      "Type_of_vehicle",
+      "Type_of_order",
+      "City",
+      "Festival"
+    ],
+    "fold_auc": [
+      0.5140838724039416,
+      0.5152624272709748,
+      0.5004588984527544,
+      0.5004732800557601,
+      0.5079187109246543
+    ],
+    "fold_f1": [
+      0.4454160404426834,
+      0.4407622203811102,
+      0.40712758374910907,
+      0.42992741485203795,
+      0.4431818181818182
+    ],
+    "fold_bal_acc": [
+      0.5127392545457692,
+      0.5117621834731962,
+      0.49190488807413035,
+      0.5053569979328683,
+      0.5075516592805657
+    ],
+    "mean_auc": 0.507639437821617,
+    "mean_f1": 0.4332830155213518,
+    "mean_bal_acc": 0.505862996661306,
+    "note": "Same as model_behaviour but with month + day_of_week dropped to remove the data-collection sampling leak documented in date-range analysis."
+  },
+  "temporal_leak": {
+    "description": "Within-region month %s differ even though date ranges are identical Feb 11\u2013Apr 6 2022. Feb = 20.8% of North orders but only 4.3% of South orders \u2014 a sampling-window artifact, not real seasonality.",
+    "month_pct_north": {
+      "Feb": 20.8,
+      "Mar": 66.0,
+      "Apr": 13.2
+    },
+    "month_pct_south": {
+      "Feb": 4.3,
+      "Mar": 79.9,
+      "Apr": 15.8
+    }
+  }
+}

@@ -187,6 +187,41 @@ The hackathon rulebook §6 requires we can explain every line. Here are the load
 
 ---
 
+## Part 2 — Regional Classification (18:30 deliverable)
+
+A separate task added in the afternoon: classify each order as **South India** (Kerala, Tamil Nadu, Andhra Pradesh, Telangana, Karnataka) or **North India** (everything else), and surface the behavioural patterns that distinguish the two.
+
+**The unlock:** `Delivery_person_ID` encodes city codes (`KOCRES16DEL01` = Kochi, Kerala). 22 unique cities → clean ground-truth labels, no reverse-geocoding needed. Each code's median lat/lon falls within 45 km of its expected centroid — all 22 verified.
+
+**Class balance:** South 16,397 (39.1%) · North 25,547 (60.9%).
+
+**Two-model design:**
+
+| Model | Features | 5-fold AUC | What it shows |
+|---|---|---:|---|
+| A — GEO | lat/lon + distance only | **1.000** | Labels are clean (calibration model) |
+| B — BEHAVIOUR (raw) | everything except coords | 0.588 | One feature (month) carries all the signal |
+| **B′ — BEHAVIOUR (leak-free)** | drop month, day_of_week | **0.508** | **Essentially random — the honest answer** |
+
+**The headline finding:** Once the data-collection sampling artifact is removed (month % differs 4.3% South vs 20.8% North in February — a window-opening leak, not seasonality), the model is a coin flip. **Zomato deliveries are operationally identical North vs South.** Geographic signal (coordinates) carries 100% of the regional separability; every other behavioural signal is regional-coincidence noise.
+
+11 univariate tests run (Mann-Whitney for numeric, Chi-square for categorical) — **zero** showed a significant N/S split at p < 0.05.
+
+Run it yourself:
+```bash
+python notebooks/_run_regional.py        # EDA + 2 models + SHAP, ~3 min
+python notebooks/_build_regional_deck.py # builds pitch_regional_630pm.pptx
+```
+
+Artifacts:
+- [reports/dev_plan_regional.pdf](reports/dev_plan_regional.pdf) — pre-implementation plan
+- [reports/regional_findings.json](reports/regional_findings.json) — every test result + both models
+- [reports/regional_city_check.csv](reports/regional_city_check.csv) — 22-city sanity check
+- [reports/pitch_regional_630pm.{pptx,pdf}](reports/pitch_regional_630pm.pdf) — 10-slide pitch
+- [models/region_classifier_v1.txt](models/region_classifier_v1.txt) — Model B booster
+
+---
+
 ## Team
 
 | Role | Owns |
