@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import pandas as pd; df = pd.read_csv\\('data/raw/train.csv'\\); print\\(df.shape\\); print\\(df.columns.tolist\\(\\)\\)\")",
+      "Bash(Get-ChildItem -Recurse \"C:\\\\Users\\\\Rayyan Shaikh\\\\Desktop\\\\Zomato-delivery-estimation\\\\data\" -ErrorAction SilentlyContinue)",
+      "Bash(python -c \"import pandas as pd; df = pd.read_csv\\('data/raw/Zomato Dataset.csv'\\); print\\(df.shape\\); print\\(df.columns.tolist\\(\\)\\)\")"
+    ]
+  }
+}
