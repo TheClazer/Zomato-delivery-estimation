@@ -1,6 +1,0 @@
-# .gitignore
-.venv/
-data/raw/
-*.pkl
-.ipynb_checkpoints/
-__pycache__/
