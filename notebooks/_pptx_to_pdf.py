@@ -1,7 +1,8 @@
 """Convert .pptx → .pdf via the installed PowerPoint COM interface.
-Windows-only; falls back to a hint if PowerPoint isn't available.
+Windows-only. Newer Office builds (Microsoft 365) reject WithWindow=False
+silently, so we open with a real window then close immediately.
 """
-import os, sys
+import os, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -12,21 +13,22 @@ for t in targets:
     if not t.exists():
         print(f"skip {t.name} (missing)")
 
-try:
-    import comtypes.client
-except ImportError:
-    print("comtypes not available — install with `pip install comtypes`")
-    sys.exit(1)
+import comtypes.client
 
 ppt = comtypes.client.CreateObject("PowerPoint.Application")
+# Cannot set Visible=False in newer Office — leave default and let it briefly show
 try:
     for t in targets:
         if not t.exists():
             continue
         pdf = t.with_suffix(".pdf")
-        deck = ppt.Presentations.Open(str(t), WithWindow=False)
-        deck.SaveAs(str(pdf), 32)  # ppSaveAsPDF = 32
+        deck = ppt.Presentations.Open(str(t.resolve()))
+        deck.SaveAs(str(pdf.resolve()), 32)  # ppSaveAsPDF = 32
         deck.Close()
         print(f"wrote {pdf.relative_to(ROOT)}  ({pdf.stat().st_size:,} bytes)")
+        time.sleep(0.2)
 finally:
-    ppt.Quit()
+    try:
+        ppt.Quit()
+    except Exception:
+        pass
