@@ -199,12 +199,12 @@ story.append(Paragraph("2.3  Confusion matrix", H3))
 story.append(Paragraph(
     "A 2×2 table that counts every prediction:",
     body))
-cm = [
+cm_table = [
     ["",                 "Model predicted NORTH",  "Model predicted SOUTH"],
     ["Truly NORTH",      "TN (true negative)",      "FP (false positive)"],
     ["Truly SOUTH",      "FN (false negative)",     "TP (true positive)"],
 ]
-story.append(tbl(cm, cw=[3.5*cm, 5.5*cm, 5.5*cm]))
+story.append(tbl(cm_table, cw=[3.5*cm, 5.5*cm, 5.5*cm]))
 story.append(Paragraph(
     "TP, FP, FN, TN are simply how many rows fell into each cell. Precision, recall, accuracy, F1 are all "
     "computed from these four numbers.",
