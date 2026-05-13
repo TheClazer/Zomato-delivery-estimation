@@ -20,6 +20,12 @@ __pycache__/
 # CatBoost training cache
 catboost_info/
 
+# Claude Code local permissions cache (per-machine, not work product)
+.claude/settings.local.json
+
+# Office lock files (PowerPoint creates ~$file.pptx while open)
+~$*
+
 # Processed data
 data/processed/*
 !data/processed/.gitkeep
