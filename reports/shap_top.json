@@ -1,0 +1,12 @@
+{
+  "Road_traffic_density": 2.6269635415211563,
+  "Delivery_person_Age": 2.3723895397670622,
+  "Delivery_person_Ratings": 2.338281080050037,
+  "distance_km": 2.0862866051238997,
+  "Vehicle_condition": 1.880560652661415,
+  "Weather_conditions": 1.6735250145484197,
+  "multiple_deliveries": 0.7787722049794333,
+  "City": 0.32761846037959774,
+  "Festival": 0.18660305336677113,
+  "order_hour": 0.16353466431039135
+}

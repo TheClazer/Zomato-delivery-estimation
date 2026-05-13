@@ -1,0 +1,10 @@
+* text=auto
+
+# Model files: binary, no line-ending conversion
+models/*.txt binary
+*.parquet binary
+*.npy binary
+*.pkl binary
+
+# Notebooks: track as text
+*.ipynb text eol=lf

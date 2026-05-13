@@ -1,0 +1,49 @@
+{
+  "n_rows": 45153,
+  "n_cols": 21,
+  "target_min": 10.0,
+  "target_max": 54.0,
+  "target_mean": 26.29738887781543,
+  "target_median": 26.0,
+  "top_missing": {
+    "Delivery_person_Ratings": 0.03676389165725422,
+    "Delivery_person_Age": 0.035678692445684675,
+    "Time_Orderd": 0.03224591942949527
+  },
+  "spearman_distance_time": 0.3331392126989265,
+  "weather_delta_median_min": 6.0,
+  "festival_delta_mean_min": 19.51405836310592,
+  "rho_multi_deliveries": 0.33928821528134984,
+  "hypotheses": [
+    {
+      "name": "H1: distance \u2194 time (Spearman)",
+      "stat": "\u03c1=0.321",
+      "p": "p=0.00e+00",
+      "verdict": "Weak"
+    },
+    {
+      "name": "H2: traffic groups (ANOVA)",
+      "stat": "F=3390.2",
+      "p": "p=0.00e+00",
+      "verdict": "Different"
+    },
+    {
+      "name": "H3: bad weather > sunny (M-W)",
+      "stat": "U=109573900",
+      "p": "p=0.00e+00",
+      "verdict": "Yes"
+    },
+    {
+      "name": "H4: festival > non-festival (Welch)",
+      "stat": "t=138.32",
+      "p": "p=0.00e+00",
+      "verdict": "Yes"
+    },
+    {
+      "name": "H5: multi-deliveries \u2194 time (Spearman)",
+      "stat": "\u03c1=0.339",
+      "p": "p=0.00e+00",
+      "verdict": "Yes"
+    }
+  ]
+}

@@ -26,11 +26,8 @@ data/processed/*
 data/pivot/*
 !data/pivot/.gitkeep
 
-# Reports output
-reports/eda_2pm.pdf
-reports/pitch_6pm.pdf
-reports/figures/*
-!reports/figures/.gitkeep
+# Reports output — deliverables ARE tracked; only large intermediates excluded
+# (figures, PDFs, and decks are committed so the README badges + decks render on GitHub)
 
 # Submissions
 submissions/*
