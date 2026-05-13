@@ -571,5 +571,371 @@
       "Mar": 79.9,
       "Apr": 15.8
     }
+  },
+  "deep_check": {
+    "ks_shape_tests": [
+      {
+        "column": "Time_taken (min)",
+        "ks_D": 0.008018022996591823,
+        "p": 0.5393624203327346,
+        "south_iqr": 13.0,
+        "north_iqr": 13.5,
+        "south_std": 9.37681467051703,
+        "north_std": 9.38403683053794,
+        "significant": false
+      },
+      {
+        "column": "distance_km",
+        "ks_D": 0.08785417079453141,
+        "p": 6.697643944350539e-67,
+        "south_iqr": 9.305472360861083,
+        "north_iqr": 9.02216281089334,
+        "south_std": 5.561895513551721,
+        "north_std": 5.628620845938651,
+        "significant": true
+      },
+      {
+        "column": "prep_time_min",
+        "ks_D": 0.007269649423671143,
+        "p": 0.7973600395045882,
+        "south_iqr": 10.0,
+        "north_iqr": 10.0,
+        "south_std": 4.092230160946414,
+        "north_std": 4.083664914882966,
+        "significant": false
+      },
+      {
+        "column": "order_hour",
+        "ks_D": 0.0062362531056443515,
+        "p": 0.8297305118363477,
+        "south_iqr": 10.0,
+        "north_iqr": 10.0,
+        "south_std": 7.430091357240742,
+        "north_std": 7.529042101674376,
+        "significant": false
+      },
+      {
+        "column": "is_weekend",
+        "ks_D": 0.00790350003424134,
+        "p": 0.5580363213350088,
+        "south_iqr": 1.0,
+        "north_iqr": 1.0,
+        "south_std": 0.4490077970998649,
+        "north_std": 0.4450430313625063,
+        "significant": false
+      },
+      {
+        "column": "is_peak_lunch",
+        "ks_D": 0.002673787580790843,
+        "p": 0.9999996396040874,
+        "south_iqr": 0.0,
+        "north_iqr": 0.0,
+        "south_std": 0.2818848489503513,
+        "north_std": 0.277923907381885,
+        "significant": false
+      },
+      {
+        "column": "is_peak_dinner",
+        "ks_D": 0.0037088103680147366,
+        "p": 0.9990827876456825,
+        "south_iqr": 1.0,
+        "north_iqr": 1.0,
+        "south_std": 0.48259013480410645,
+        "north_std": 0.4815638928089653,
+        "significant": false
+      },
+      {
+        "column": "is_late_night",
+        "ks_D": 0.008854224677790179,
+        "p": 0.41162347825689727,
+        "south_iqr": 1.0,
+        "north_iqr": 1.0,
+        "south_std": 0.45911573865627486,
+        "north_std": 0.46283002542058616,
+        "significant": false
+      },
+      {
+        "column": "Delivery_person_Age",
+        "ks_D": 0.006719834505891947,
+        "p": 0.7773436774816679,
+        "south_iqr": 10.0,
+        "north_iqr": 10.0,
+        "south_std": 5.823896677538609,
+        "north_std": 5.80487368016376,
+        "significant": false
+      },
+      {
+        "column": "Delivery_person_Ratings",
+        "ks_D": 0.0031518624641833637,
+        "p": 0.999978747477283,
+        "south_iqr": 0.40000000000000036,
+        "north_iqr": 0.40000000000000036,
+        "south_std": 0.3411756437611971,
+        "north_std": 0.3268915305558894,
+        "significant": false
+      },
+      {
+        "column": "Vehicle_condition",
+        "ks_D": 0.0066099083515748225,
+        "p": 0.7728480364929013,
+        "south_iqr": 2.0,
+        "north_iqr": 2.0,
+        "south_std": 0.8437740056326344,
+        "north_std": 0.8357277393168926,
+        "significant": false
+      },
+      {
+        "column": "multiple_deliveries",
+        "ks_D": 0.0032070775981182797,
+        "p": 0.9999582202505468,
+        "south_iqr": 1.0,
+        "north_iqr": 1.0,
+        "south_std": 0.5727196368327525,
+        "north_std": 0.5718577835458396,
+        "significant": false
+      }
+    ],
+    "dispersion": [
+      {
+        "column": "Time_taken (min)",
+        "ratio": 0.9992303781249655,
+        "verdict": "Equal"
+      },
+      {
+        "column": "distance_km",
+        "ratio": 0.9881453495957049,
+        "verdict": "Equal"
+      },
+      {
+        "column": "prep_time_min",
+        "ratio": 1.0020974409609937,
+        "verdict": "Equal"
+      },
+      {
+        "column": "order_hour",
+        "ratio": 0.986857459010406,
+        "verdict": "Equal"
+      },
+      {
+        "column": "is_weekend",
+        "ratio": 1.0089087244557462,
+        "verdict": "Equal"
+      },
+      {
+        "column": "is_peak_lunch",
+        "ratio": 1.0142518922023636,
+        "verdict": "Equal"
+      },
+      {
+        "column": "is_peak_dinner",
+        "ratio": 1.002131060925592,
+        "verdict": "Equal"
+      },
+      {
+        "column": "is_late_night",
+        "ratio": 0.9919748362026944,
+        "verdict": "Equal"
+      },
+      {
+        "column": "Delivery_person_Age",
+        "ratio": 1.003277073442589,
+        "verdict": "Equal"
+      },
+      {
+        "column": "Delivery_person_Ratings",
+        "ratio": 1.0436967980816667,
+        "verdict": "Equal"
+      },
+      {
+        "column": "Vehicle_condition",
+        "ratio": 1.0096278559837186,
+        "verdict": "Equal"
+      },
+      {
+        "column": "multiple_deliveries",
+        "ratio": 1.001507111228895,
+        "verdict": "Equal"
+      }
+    ],
+    "interactions": {
+      "added_features": [
+        "traffic_x_hour",
+        "weather_x_traffic",
+        "vehicle_x_multi",
+        "distance_per_age",
+        "rating_x_traffic"
+      ],
+      "fold_auc": [
+        0.9539047630983862,
+        0.943190880232327,
+        0.9566605321073762,
+        0.9505330442690803,
+        0.9485883255848965
+      ],
+      "mean_auc": 0.9505755090584133
+    },
+    "group_kfold_by_city": {
+      "fold_auc": [
+        0.5093883086710517,
+        0.5071763655516196,
+        0.4992288367359919,
+        0.5048143626883242,
+        0.5082716393481546
+      ],
+      "fold_bal_acc": [
+        0.5057699069367604,
+        0.5017497945324317,
+        0.5004537039869147,
+        0.5045448046098632,
+        0.5012341616186637
+      ],
+      "held_cities_per_fold": [
+        [
+          "AGR",
+          "ALH",
+          "JAP",
+          "LUDH",
+          "MYS"
+        ],
+        [
+          "BANG",
+          "PUNE",
+          "RANCHI"
+        ],
+        [
+          "BHP",
+          "CHEN",
+          "SUR",
+          "VAD"
+        ],
+        [
+          "DEH",
+          "HYD",
+          "INDO",
+          "KNP",
+          "KOC"
+        ],
+        [
+          "AURG",
+          "COIMB",
+          "GOA",
+          "KOL",
+          "MUM"
+        ]
+      ],
+      "mean_auc": 0.5057759025990284,
+      "mean_bal_acc": 0.5027504743369267,
+      "note": "Trained on ~17-18 cities, tested on the held-out 4-5 cities. If behaviour carries regional signal, AUC stays near random-split value (~0.5). If we somehow over-fit to per-city quirks, AUC would collapse to <0.5 here."
+    },
+    "south_internal": {
+      "states": [
+        "Karnataka",
+        "Kerala",
+        "Tamil Nadu",
+        "Telangana"
+      ],
+      "random_baseline": 0.25,
+      "fold_accuracy": [
+        0.37896341463414634,
+        0.37835365853658537,
+        0.3745044220799024,
+        0.37907898749618785,
+        0.3763342482464166
+      ],
+      "mean_accuracy": 0.3774469461986477,
+      "note": "If South India is internally homogeneous, a 5-way state classifier on behaviour-only features should hover near 1/k random baseline."
+    },
+    "catboost_crosscheck": {
+      "fold_auc": [
+        0.5117482180680115,
+        0.5109539207278245,
+        0.49255462622154117,
+        0.5123636731449522,
+        0.5075409145585075
+      ],
+      "mean_auc": 0.5070322705441674,
+      "note": "Independent gradient-booster confirms the leak-free LightGBM result."
+    },
+    "interactions_groupkfold": {
+      "fold_auc": [
+        0.8926983175510933,
+        0.9306336265101419,
+        0.9711781143780711,
+        0.648529539680951,
+        0.9129950201891927
+      ],
+      "mean_auc": 0.87120692366189,
+      "note": "Interactions + GroupKFold by city. If AUC stays near 0.95 (random-KFold value), interactions carry true regional signal. If it drops to ~0.5, interactions were memorising per-city patterns."
+    },
+    "ablation_groupkfold": {
+      "baseline_no_interactions": 0.5057759025990284,
+      "traffic_x_hour": 0.507627080009646,
+      "weather_x_traffic": 0.5022590997458518,
+      "vehicle_x_multi": 0.5036104889240142,
+      "distance_per_age": 0.8779530029792069,
+      "rating_x_traffic": 0.5008004905923544
+    }
+  },
+  "model_structural": {
+    "description": "Behaviour features + distance_km (haversine pickup-drop). Tests whether geographic STRUCTURE (not absolute coordinates) carries regional signal.",
+    "features": [
+      "prep_time_min",
+      "order_hour",
+      "is_peak_lunch",
+      "is_peak_dinner",
+      "is_late_night",
+      "is_weekend",
+      "Delivery_person_Age",
+      "Delivery_person_Ratings",
+      "Vehicle_condition",
+      "multiple_deliveries",
+      "distance_km",
+      "Weather_conditions",
+      "Road_traffic_density",
+      "Type_of_vehicle",
+      "Type_of_order",
+      "City",
+      "Festival"
+    ],
+    "strat_kfold_auc": 0.9956206031150755,
+    "strat_kfold_f1": 0.9519284458525343,
+    "strat_kfold_bal_acc": 0.9643052019022772,
+    "strat_fold_auc": [
+      0.9955134942219627,
+      0.9960627404780108,
+      0.995798841356,
+      0.9957659009209,
+      0.9949620385985039
+    ],
+    "group_kfold_auc": 0.9109416399292867,
+    "group_fold_auc": [
+      0.9981227053142543,
+      0.9979258842941938,
+      0.9999608258529222,
+      0.6421672958043191,
+      0.9165314883807443
+    ],
+    "confusion_matrix_oof": [
+      [
+        24295,
+        1252
+      ],
+      [
+        367,
+        16030
+      ]
+    ],
+    "top_shap": {
+      "distance_km": 4.8715,
+      "order_hour": 0.1506,
+      "Delivery_person_Ratings": 0.076,
+      "Delivery_person_Age": 0.0738,
+      "prep_time_min": 0.0492,
+      "Type_of_order": 0.0479,
+      "multiple_deliveries": 0.0466,
+      "Weather_conditions": 0.0464,
+      "Road_traffic_density": 0.0441,
+      "Vehicle_condition": 0.0297
+    }
   }
 }
