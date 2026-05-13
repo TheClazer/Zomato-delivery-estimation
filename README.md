@@ -1,19 +1,11 @@
-# Zomato Delivery Estimation
+# README.md
+# Zomato Delivery ETA Estimation
 
-Project to estimate Zomato delivery times.
+This project aims to predict the delivery time (in minutes) for Zomato orders using machine learning regression techniques. As part of a 10-hour hackathon, we are leveraging historical delivery data to build a robust model that minimizes Mean Absolute Error (MAE), helping optimize logistics and improve customer satisfaction by providing more accurate delivery estimates.
 
-## Folder Structure
+## How to run
 
-- `data/`: Contains raw, processed, and pivot data.
-- `notebooks/`: Jupyter notebooks for EDA, feature engineering, and modeling.
-- `src/`: Source code for data processing, feature engineering, and modeling.
-- `reports/`: Generated reports and figures.
-- `submissions/`: Kaggle-style submission files.
-
-## Getting Started
-
-1. Install dependencies:
+1. **Clone the repository**:
    ```bash
-   pip install -r requirements.txt
-   ```
-2. Explore the data in `notebooks/01_eda.ipynb`.
+   git clone https://github.com/TheClazer/Zomato-delivery-estimation.git
+   cd Zomato-delivery-estimation
