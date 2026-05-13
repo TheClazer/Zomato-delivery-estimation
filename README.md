@@ -195,7 +195,7 @@ The hackathon rulebook §6 requires we can explain every line. Here are the load
 | **P2 — EDA & Insights** (20%) | `notebooks/01_eda.ipynb`, plots, hypothesis tests, SHAP |
 | **P3 — Deck & Pitch** (20%) | `reports/eda_2pm.pdf`, `reports/pitch_6pm.pdf`, pitch delivery |
 
-Team members: **[P1 NAME] · [P2 NAME] · [P3 NAME]** (placeholders — replace before submission).
+Team **Hmmmmmmmmmm** — Suchit SM · Rayyan Shaikh · Ranadeep M.
 
 ---
 

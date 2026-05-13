@@ -137,7 +137,7 @@ def build_eda_deck(out_path):
     p2.font.size = Pt(22); p2.font.color.rgb = _rgb(TEAL)
     tb3 = s.shapes.add_textbox(Inches(0.8), Inches(5.0), Inches(12), Inches(1.5))
     tf = tb3.text_frame
-    for i, line in enumerate(["Team [NAME]   ·   P1 [n]    P2 [n]    P3 [n]",
+    for i, line in enumerate(["Team Hmmmmmmmmmm   ·   Suchit SM    Rayyan Shaikh    Ranadeep M",
                               f"{REPO}",
                               "EDA submission — 14:00 IST"]):
         p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
@@ -265,7 +265,7 @@ def build_pitch_deck(out_path):
     p2.font.size = Pt(22); p2.font.color.rgb = _rgb(TEAL)
     tb3 = s.shapes.add_textbox(Inches(0.8), Inches(5.0), Inches(12), Inches(1.6))
     tf = tb3.text_frame
-    for i, line in enumerate(["Team [NAME]   ·   P1 [n]    P2 [n]    P3 [n]",
+    for i, line in enumerate(["Team Hmmmmmmmmmm   ·   Suchit SM    Rayyan Shaikh    Ranadeep M",
                               f"{REPO}",
                               "Final commit: [HASH] — tag: final"]):
         p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
