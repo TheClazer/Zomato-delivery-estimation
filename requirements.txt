@@ -1,15 +1,17 @@
+# requirements.txt
 pandas
 numpy
-matplotlib
-seaborn
 scikit-learn
-jupyter
-ipykernel
-haversine
-scipy
 lightgbm
 xgboost
 catboost
+matplotlib
+seaborn
+shap
+optuna
+jupyter
+geopy
+folium
+scipy
 statsmodels
 pyarrow
-fastparquet
