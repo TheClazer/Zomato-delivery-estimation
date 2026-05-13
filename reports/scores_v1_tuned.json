@@ -1,0 +1,25 @@
+{
+  "fold_mae": [
+    3.0289180599995777,
+    3.0670368703680944,
+    3.041676175905081,
+    3.0803248234800233,
+    3.0484812125691816
+  ],
+  "mae_mean": 3.0532874284643916,
+  "mae_std": 0.01828581361873699,
+  "best_params": {
+    "learning_rate": 0.021163276895089726,
+    "num_leaves": 106,
+    "min_child_samples": 16,
+    "feature_fraction": 0.8986429719768546,
+    "bagging_fraction": 0.9468971908825758,
+    "reg_alpha": 0.004302464414753539,
+    "reg_lambda": 0.9863866696364015,
+    "n_estimators": 1200,
+    "bagging_freq": 5,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1
+  }
+}
