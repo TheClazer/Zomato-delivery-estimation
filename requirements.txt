@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyter
+ipykernel
+haversine
+scipy
+lightgbm
+xgboost
+catboost
+statsmodels
+pyarrow
+fastparquet
