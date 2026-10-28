@@ -4,7 +4,7 @@
 [![Model](https://img.shields.io/badge/model-LightGBM%20%2B%20CatBoost%20blend-0d9488?style=flat-square)](models/lgbm_v1.txt)
 [![Reproducible](https://img.shields.io/badge/seed-42%20everywhere-1e40af?style=flat-square)](#reproducibility)
 
-A 10-hour hackathon sprint to predict `Time_taken (min)` for food deliveries. Final cross-validated MAE: **3.04 min** (0.55 LightGBM + 0.45 CatBoost blend, 5-fold KFold, seed 42).
+A 10-hour hackathon sprint to predict `Time_taken (min)` for food deliveries. Final cross-validated MAE: **3.04 min** (0.55 LightGBM + 0.45 CatBoost blend, 5-fold KFold, seed 42)
 
 ---
 
